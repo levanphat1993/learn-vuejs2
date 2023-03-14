@@ -1,13 +1,16 @@
-let vm = new Vue({
+var vm = new Vue({
     el: '#computed_props',
     data: {
-        first_name: "",
-        last_name: "",
-        birthyear: ""
+       name : "helloworld"
     },
-    computed: {
-        get_full_name : function(){
-            return this.first_name +" "+ this.last_name;
-         }
+    methods: {
+       get_random_no1 : function() {
+          return Math.random();
+       }
+    },
+    computed :{
+       get_random_no : function(){
+          return Math.random();
+       }
     }
-});
+ });

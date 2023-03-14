@@ -5,7 +5,7 @@ let vm = new Vue({
         num2: 200,
         total: '',
         styleobj: {
-            with: "100px",
+            width: "100px",
             hegiht: "100px",
             backgroundColor: "red"
         }

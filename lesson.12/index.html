@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="./js/vue.js"></script>
+    <title>Learn VueJs</title>
+</head>
+
+<body>
+
+    <div id="databinding">
+        <button v-on:click.one="buttonclickedonce" v-bind:style="styleobj">Click One</button>
+        Output:{{clicknum}}
+        <br/>
+        <button v-on:click.one="buttonclicked" v-bind:style="styleobj">Click One</button>
+        Output:{{clicknum1}}
+    </div>
+
+    <script type="text/javascript" src="./js/app.js"></script>
+
+</body>
+
+</html>
+
+

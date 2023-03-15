@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="./css/animate.css" rel = "stylesheet" type = "text/css">
+
+    <script type="text/javascript" src="./js/vue.js"></script>
+    <title>Learn VueJs</title>
+</head>
+
+<body>
+
+    <div id="databinding" style="text-align: center;">
+        <transition appear
+            appear-class = "custom-appear-class"
+            appear-active-class = "animated wobble" >
+            <component v-bind:is = "view"></component>
+        </transition>
+    </div>
+     
+    <script type="text/javascript" src="./js/app.js"></script>
+
+</body>
+
+</html>
+
+

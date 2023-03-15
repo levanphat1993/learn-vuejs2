@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="./js/vue.js"></script>
+    <title>Learn VueJs</title>
+</head>
+
+<body>
+    
+    <div id="app">
+
+        <h1> Curreny Converter </h1>
+        <span>
+            Enter Amount: 
+            <span>
+                <input type="number" v-model.number = "amount" placeholder="Enter Amount Please" />
+                <br/><br/>
+                <select v-model="convertfrom" style="width:300px;font-size:25px;">
+                    <option v-for="(a,item) in currencyfrom" v-bind:value = "a.name">
+                        {{a.desc}}
+                    </option>
+                </select>
+                <span>Convert To:</span>
+                <select v-model="convertto" style="width:300px;font-size:25px;">
+                    <option v-for="(a,item) in currencyfrom" v-bind:value = "a.name">
+                        {{a.desc}}
+                    </option>
+                </select>
+                <br/><br/>
+                <span> {{amount}} {{convertfrom}} equals {{finalamount}} {{convertto}}</span>
+            </span>
+        </span>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="./js/app.js"></script>
+
+</body>
+
+</html>

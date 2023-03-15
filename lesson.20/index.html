@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="./js/vue.js"></script>
+    <title>Learn VueJs</title>
+</head>
+
+<body>
+
+    <style>
+
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 2s
+        }
+        .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+            opacity: 0
+        }
+
+    </style>
+
+    <div id="databinding">
+        <button v-on:click = "show = !show">Click Me</button>
+        <transition>
+            <p v-show="show" v-bind:style = "styleobj" >Animation Example</p>
+        </transition>
+    </div>
+
+    <script type="text/javascript" src="./js/app.js"></script>
+
+</body>
+
+</html>
+
+

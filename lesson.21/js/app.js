@@ -1,9 +1,8 @@
-let vm = new Vue({
+var vm = new Vue({
     el: '#databinding',
     data: {
-        show: true,
+       show:true
     },
     methods : {
-
     }
-});
+ });
